@@ -3,12 +3,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        String text;
+        int pilihan;
+        
+    do {    
         System.out.print("Input text : ");
-        String text = input.nextLine();
+        text = input.nextLine();
         System.out.println("1. Reverse Perhuruf");
         System.out.println("2. Reverse Perkata");
         System.out.print("Input Pilihan : ");
-        int pilihan = input.nextInt();
+        pilihan = input.nextInt();
+        input.nextLine();
 
         if (pilihan == 1){
             char[] textArray = text.toCharArray();
@@ -31,8 +36,9 @@ public class Main {
         }
         else {
             System.out.println("Input yang Dimasukkan Salah");
-            System.exit(0);
+            System.out.println();
         }
+    } while (pilihan !=1 && pilihan !=2);
 
     }
 }
