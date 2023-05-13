@@ -5,7 +5,7 @@ public class Main {
         Manusia orang1 = new Manusia("Perempuan,", "Angela,", 20);
         Manusia orang2 = new Manusia("Laki-Laki,", "Andhika,");
 
-        orang1.biodata();
-        orang2.biodata();
+        System.out.println("Nama : " +orang1.getNama()+ " Jenis Kelamin : " +orang1.getGender()+ " Umur : " +orang1.getUmur()+ " tahun");
+        System.out.println("Nama : " +orang2.getNama()+ " Jenis Kelamin : " +orang2.getGender()+ ".");
     }
 }
