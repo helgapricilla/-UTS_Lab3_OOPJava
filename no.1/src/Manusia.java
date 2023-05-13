@@ -29,24 +29,14 @@ public class Manusia {
 
         // Method getter adalah method yang digunakan untuk mengambil nilai dari suatu atribut dalam suatu objek. Method getter biasanya diberi nama "get" diikuti dengan nama atribut yang ingin diambil nilainya.
         public String getGender(){
-            return gender;
+            return this.gender;
         }
 
         public String getNama(){
-            return nama;
+            return this.nama;
         }
 
         public int getUmur(){
-            return umur;
+            return this.umur;
         }
-
-        public void biodata(){
-            System.out.println("Nama : " +nama+ " Jenis Kelamin : " +gender+ " Umur : " +umur+ " tahun");
-        }
-
-        public void biodata(String nama,String gender){
-            System.out.println("Nama : " +nama+ " Jenis Kelamin : " +gender+ ".");
-        }
-
-
     }
