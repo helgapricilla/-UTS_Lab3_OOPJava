@@ -1,12 +1,12 @@
 public class Account {
     private String id, name;
-    private int balance=0;
+    private double balance=0;
 
     public Account(String id, String name) {
         this.id = id;
         this.name = name;
     }
-    public Account(String id, String name, int balance){
+    public Account(String id, String name, double balance){
         this.id = id;
         this.name = name;
         this.balance = balance;
@@ -18,13 +18,13 @@ public class Account {
     public String getName(){
         return name;
     }
-    public int getBalance(){
+    public double getBalance(){
         return balance;
     }
-    public void credit(int amount){
+    public void credit(double amount){
         balance += amount;
     }
-    public int debit(int amount){
+    public double debit(double amount){
         if (amount <= balance) {
             balance -= amount;
         } else {
@@ -32,7 +32,7 @@ public class Account {
         }
         return balance;
     }
-    public int transferTo(Account another, int amount) {
+    public double transferTo(Account another, double amount) {
         if (amount <= balance) {
             this.debit(amount);
             another.credit(amount);
